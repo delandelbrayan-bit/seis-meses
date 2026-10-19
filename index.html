@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190e18">
+  <title>Para Nadia | Nuestros seis meses ♥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+  <div class="hearts" id="hearts"></div>
+
+  <header class="hero">
+    <p class="eyebrow">UN PEQUEÑO UNIVERSO PARA TI</p>
+    <h1>Para mi <span>Nadia</span></h1>
+    <p class="subtitle">Seis meses contigo y todavía me haces sentir mariposas.</p>
+
+    <div class="big-heart">♥</div>
+    <p class="date-text">Desde el 19 de abril de 2026</p>
+
+    <div class="counter">
+      <div>
+        <strong id="days">0</strong>
+        <span>días juntos</span>
+      </div>
+      <div>
+        <strong>6</strong>
+        <span>meses de amor</span>
+      </div>
+    </div>
+
+    <a href="#carta" class="main-button">Tengo algo para ti ♥</a>
+  </header>
+
+  <main>
+    <section class="section" id="carta">
+      <p class="eyebrow">CON TODO MI CORAZÓN</p>
+      <h2>Una carta para ti</h2>
+
+      <div class="letter">
+        <p>Mi Nadia hermosa:</p>
+        <p>
+          Hoy cumplimos seis meses juntos y quería hacerte algo
+          especial, algo que fuera solamente nuestro.
+        </p>
+        <p>
+          Gracias por cada momento, cada conversación y cada sonrisa.
+          Quiero seguir aprendiendo contigo, escuchándote y construyendo
+          recuerdos bonitos a tu lado.
+        </p>
+        <p>
+          Me emociona pensar en todas las cosas que todavía nos quedan
+          por vivir. Eres una personita muy especial para mí.
+        </p>
+        <p>Felices seis meses, mi niña. Te quiero muchísimo.</p>
+        <p class="signature">Con amor, tu novio ♥</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">SEIS MESES, MUCHAS RAZONES</p>
+      <h2>Seis cosas que amo de ti</h2>
+
+      <div class="reasons">
+        <article class="reason"><span>01</span><p>Tu forma única de ser.</p></article>
+        <article class="reason"><span>02</span><p>Tu sonrisa y lo que me hace sentir.</p></article>
+        <article class="reason"><span>03</span><p>Los momentos que compartimos.</p></article>
+        <article class="reason"><span>04</span><p>Las pequeñas cosas que te hacen especial.</p></article>
+        <article class="reason"><span>05</span><p>Todo lo que sigo descubriendo de ti.</p></article>
+        <article class="reason"><span>06</span><p>La oportunidad de compartir esta historia contigo.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">MI PROMESA</p>
+      <h2>Quiero seguir eligiéndote</h2>
+
+      <div class="promise">
+        <p>
+          Quiero escucharte, respetar tus sentimientos, hablar contigo
+          con sinceridad y seguir creciendo a tu lado.
+        </p>
+        <p>
+          No puedo prometer que todo será perfecto, pero sí que quiero
+          cuidar nuestra relación y construir recuerdos contigo.
+        </p>
+        <span>Hoy, mañana y en cada nuevo capítulo. ♥</span>
+      </div>
+    </section>
+
+    <section class="section final-message">
+      <div class="big-heart">♥</div>
+      <h2>Una última sorpresa...</h2>
+      <p>Preparé una canción especialmente para ti, Nadia.</p>
+      <button class="main-button" id="showKaraoke">
+        Descubrir la sorpresa ♥
+      </button>
+    </section>
+
+    <section class="section karaoke-section" id="karaoke">
+      <p class="eyebrow">NUESTRA CANCIÓN ESPECIAL</p>
+      <h2>Perfecta</h2>
+      <p class="karaoke-intro">
+        Miranda! · Para Nadia, con todo mi corazón.
+      </p>
+
+      <div class="music-card">
+        <div class="album-art">♫<span>♥</span></div>
+        <h3>Perfecta</h3>
+        <p class="artist">Miranda!</p>
+
+        <audio id="karaokeAudio" preload="metadata">
+          <source src="perfecta.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+
+        <div class="audio-controls">
+          <button id="playKaraoke" class="play-button" aria-label="Reproducir karaoke">▶</button>
+          <span id="currentTime">0:00</span>
+          <input id="progress" type="range" min="0" max="218" value="0" step="0.1" aria-label="Posición de la canción">
+          <span id="duration">3:38</span>
+        </div>
+
+        <div class="lyrics-box" id="lyricsBox" aria-live="polite">
+          <p class="lyric-previous" id="previousLine"></p>
+          <p class="lyric current" id="currentLine">
+            Presiona reproducir, mi amor ♥
+          </p>
+          <p class="lyric-next" id="nextLine">
+          </p>
+        </div>
+
+        <p class="karaoke-note">
+          Disfruta de nuestra canción especial, mi Nadia. Espero que te guste
+          y que la cantemos juntos muchas veces más. ♥
+        </p>
+      </div>
+
+      <p class="ending">Felices seis meses, mi Nadia. ♥</p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con amor para Nadia ♥
+    <p>19 de abril de 2026 · Nuestra historia continúa</p>
+  </footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle" id="backgroundToggle">
+    ♫ Música de fondo
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
